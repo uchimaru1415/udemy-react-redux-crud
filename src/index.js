@@ -11,8 +11,9 @@ const store = createStore(reducer)
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />, document.getElementById('root')
-  </Provider>
+    <App />
+  </Provider>,
+  document.querySelector('#root')
 );
 
 // If you want your app to work offline and load faster, you can change
